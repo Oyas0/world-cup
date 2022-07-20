@@ -186,12 +186,15 @@ ul li a:hover{
                 }
                 .top-banner-stories{
                     margin-left: 40%;
+                
                 }
                 .top-banner-button{
                     margin-left: 45%;
                 }
                 .banner-picture{
                     margin-left: 20%;
+                    height: 500px;
+                    width: 400px;
                 }
                 .blogs{
                     font-display: flex;

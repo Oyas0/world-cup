@@ -229,6 +229,8 @@ ul li a:hover{
     }
     .banner-picture{
         margin-left: 20%;
+        height: 500px;
+        width: 400px;
     }
     .blogs{
         font-display: flex;
@@ -334,4 +336,4 @@ ul li a:hover{
         display: flex;
         visibility: visible;
     }
-} */
+}
