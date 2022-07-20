@@ -1,8 +1,22 @@
-/* Top Banner css */
+/*-----------
+     Top Banner css
+            ------------*/
 main{
     width: 80%;
     font-family: 'Poppins', sans-serif;
     margin-left: 10%;
+}
+@media only screen and (max-width:688px) {
+    main{
+        margin: 0px;
+        padding: 0px;
+        width:100%;
+    }
+    .top-banner{
+        background-color: red;
+        display: flex;
+        flex-direction: column;
+    }
 }
 .top-banner{
     background-color: black;
@@ -18,10 +32,8 @@ main{
     color: white;
     font-size: 70px;
     font-weight: 700;
-    font-style:poppis;
-    
+    font-style:poppis; 
 }
-
 .top-banner-stories{
     color: white;
     font-size: 16px;
@@ -50,7 +62,9 @@ main{
     width: 581px;
     height: 613px;
 }
-/* this section made for blogs */
+/*--------------
+      this sections css made for blogs
+                              ----------------*/
 .blogs{
     height:auto;
     background-color: white;
@@ -80,6 +94,9 @@ main{
     background-color: red;
     color: white;
 }
+      /*---------------
+            This CSS is for the upcoming match blog on the left side of the 2nd section
+                                                                    ----------------------*/
 .side-of-blogs{
     width: 80%;
     background-color: white;
@@ -150,7 +167,7 @@ h4{
     background-color: slategray;
 }
                 /*<!---------------------------------
-                          this section css is last of this page
+                          The CSS of these sections is made for the end of this page
                                 -------------------------------------> */
 .last-of-the-page{
     width: 100%;
@@ -188,3 +205,133 @@ ul li a:hover{
     border-radius: 5px;
     padding: 2px 10px;
 }
+/* responsive side */
+@media only screen and (max-width:688px) {
+    main{
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+    }
+    .top-banner{
+        background-color: black;
+        flex-direction: column;
+        height: auto;
+    }
+    .top-banner-title{
+       text-align: center;
+       margin-left: 40%;
+    }
+    .top-banner-stories{
+        margin-left: 40%;
+    }
+    .top-banner-button{
+        margin-left: 45%;
+    }
+    .banner-picture{
+        margin-left: 20%;
+    }
+    .blogs{
+        font-display: flex;
+        flex-direction: column;
+    }
+    .blogs .side-of-items{
+        background-color: white;
+        border: none;
+        width: 100%;
+        margin-left: 20%;
+    }
+    .blogs .side-of-blogs{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .blogs .side-of-items .upcoming-match{
+        border: 2px solid black;
+        padding: 20px 20px;
+        width: 40%;
+        border-radius:10px ;
+        background-color: white;
+        text-align: center;
+    }
+    .side-of-blogs .match-blog-1{
+        margin-left: 20%;
+        height: auto;
+    }
+    .side-of-blogs .match-blog{
+        margin-left: 20%;
+        height: auto;
+    }
+    .side-of-blogs .match-blog-2{
+        margin-left: 20%;
+        height: auto;
+    }
+
+    .last-of-the-page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+     ul li{
+        display: inline;
+        /* grid-template-columns: repeat(1, 1fr); */
+    }
+
+}
+ @media only screen and (min-width:688px) and (max-width:999px){
+    main{
+        width: 100%;
+    }
+    .top-banner{
+        width: 100%;
+        height: auto;
+    }
+    .top-banner-picture{
+        width: 80%;
+    }
+    .blogs{
+        display: flex;
+        flex-direction: column;
+    }
+    .blogs .side-of-items{
+        display: flex;
+        background-color: white;
+        border: none;
+    }
+    .blogs .side-of-items .upcoming-match{
+        margin-left: 20px;
+        text-align: center;
+    }
+    .blogs .side-of-blogs{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        margin-left: 20px;
+    }
+    .blogs .side-of-blogs .match-blog-1{
+        width: 300px;
+        height: 400px;
+        margin-left: 80px;
+    }
+    .blogs .side-of-blogs .match-blog{
+        width: 300px;
+        height: 400px;
+        margin-left: 80px;
+    }
+    .blogs .side-of-blogs .match-blog-2{
+        width: 300px;
+        height: 400px;
+        margin-left: 60px;
+    }
+    .last-of-the-page{
+        width: 100%;
+        margin-left: 100px;
+    }
+    hr{
+        margin-left: 190px;
+    }
+    .last-of-the-page .footer-lineup{
+        margin-left: 90px;
+    }
+    .mian .bonus-button{
+        display: flex;
+        visibility: visible;
+    }
+} */
